@@ -7,34 +7,36 @@ public class Main {
 
         ArrayList<Integer> num =new ArrayList<>();
 
-        num.add(10);
-        num.add(20);
-        num.add(30);
-        num.add(40);
+        num.add(1);
+        num.add(68);
+        num.add(50);
+        num.add(0);
+        num.add(3);
+        num.add(80);
 
         int s = 0;
         for (int x: num) s+= x;
         System.out.println("Suma: " + s);
 
-        int c = 0;
-        for (int x : num)
-            if (x % 2 == 0) c++;
-        System.out.println("Cantidad de pares: " + c);
+        ArrayList<String> nombres = new ArrayList<>();
+        nombres.add("Sandra");
+        nombres.add("Yised");
+        nombres.add("Wilson");
+        nombres.add("Deicy");
+        nombres.add("Andres");
+        nombres.add("Oliva");
 
-
-        boolean esta = false;
-        for (int x : num) {
-            if (x == 10) {
-                esta = true;
-                break;
-            }
+        for (String nombre : nombres) {
+            System.out.println(nombre);
         }
 
-        if (esta) {
-            System.out.println("El número " + 10 + " está en la lista.");
-        } else {
-            System.out.println("El número " + 10 + " NO está en la lista.");
+        for (String nombre : nombres) {
+            System.out.println(nombre);
         }
-
+        int i = 0;
+        while (i < nombres.size()) {
+            System.out.println(nombres.get(i));
+            i++;
+        }
     }
 }
